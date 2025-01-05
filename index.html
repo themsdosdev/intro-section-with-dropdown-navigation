@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo snap">
+    <img  id="hamburger-menu" class="hamburger-menu" src="./images/icon-menu.svg" alt="icon menu">
+    
+    <nav id ="navbar">
+
+      <div class="back"></div>
+        
+      <div class="front">
+          <div class="icon-close"><img id = "close-btn" src="./images/icon-close-menu.svg" alt="icon close"></div>
+          <ul>
+            <li class="features-container"><button id="features-btn" class="submenu-btn">Features<img id="features-btn-arrow" src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
+    
+              <ul id="features-ul" class="features-ul">
+                <li class="li-hover"> <img src="./images/icon-todo.svg" alt="icon todo">
+                  <span>Todo List</span></li>
+                <li class="li-hover"> <img src="./images/icon-calendar.svg" alt="icon calendar">
+                  <span>Calendar</span></li>
+                <li class="li-hover"> <img src="./images/icon-reminders.svg" alt="icon reminders">
+                  <span>Reminders</span></li>
+                <li class="li-hover"> <img src="./images/icon-planning.svg" alt="icon planning">
+                  <span>Planning</span></li>
+              </ul>
+            
+            </li>
+    
+            <li class="company-container"><button id="company-btn"  class="submenu-btn">Company<img id="company-btn-arrow" src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
+    
+              <ul id="company-ul" class="company-ul">
+                <li class="li-hover">History</li>
+                <li class="li-hover">Our Team</li>
+                <li class="li-hover">Blog</li>
+              </ul>
+    
+            </li>
+            <li class="li-hover">Careers</li>
+            <li class="li-hover">About</li>
+          </ul>
+
+          <div class="btn-container">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+          </div>
+  
+      </div>
+
+      
+
+
+      
+    </nav>
+  </header>
+
+  
+
+  <main>
+    <section>
+      <h2>Make remote work</h2>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="logo-container">
+        <img  class="databiz" src="./images/client-databiz.svg" alt="client databiz">
+        <img class="audiophile" src="./images/client-audiophile.svg" alt="client audiophile">
+        <img class="meet" src="./images/client-meet.svg" alt="client meet">
+        <img class="maker" src="./images/client-maker.svg" alt="client maker">
+      </div>
+    </section>
+    <picture>
+      
+      <source media="(max-width: 1023px)" srcset="./images/image-hero-mobile.png">
+
+      <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png">
+      
+      <img class="hero-image" src="./images/image-hero-mobile.png" alt="hero image">
+      
+    </picture>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Themsdosdev</a>.
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
